@@ -1,4 +1,117 @@
+body {
+    margin: 0;
+}
+
+/*HEADER*/
+
+header {
+    color: #FFFFFF;
+    background-image:url(./roman-mager1.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+header h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+header img {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 162px;
+}
+
+/*CONTENT*/
+
+.content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    background-color: #FA382F;
+}
+
+.content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    color: #FA382F;
+}
+
+
+/*DESCRIPTION-SECTION*/
+
+.description {
+    background-color: #F4F4F4;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+/*TECH-SECTION*/
+
+.tech {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+/*PROJECTS-SECTION*/
+
+.projects {
+    background-color: #F4F4F4;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+}
+
+.projects h3 {
+    font-weight: bold;
+    color: #FA382F;
+}
+
+.tags {
+    font-size: 9px;
+    background-color: #FDDFE7;
+}
+
+.arrows {
+    font-weight: bold;
+    color: #FA382F;
+    font-size: 17px;
+}
+
+/*FOOTER*/
+
 footer {
     background-color: #072BCE;
     color: #FFFFFF;
+}
+
+footer h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+}
+
+.name {
+    font-weight: bold;
 }
