@@ -46,6 +46,10 @@ header img {
     font-size: 22px;
     color: white;
     background-color: #FA382F;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
 }
 
 .content h2 {
@@ -62,6 +66,20 @@ header img {
     background-color: #F4F4F4;
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 56px;
+}
+
+.description article {
+    width: 80%;
+    text-align: left;
+    line-height: 29px;
+}
+
+.description span {
+    margin-right: 10px;
 }
 
 /*TECH-SECTION*/
@@ -69,6 +87,16 @@ header img {
 .tech {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 29px;
+    padding-top: 58px;
+    padding-bottom: 56px;
+}
+
+.tech p {
+    width: 80%;
 }
 
 /*PROJECTS-SECTION*/
@@ -77,21 +105,148 @@ header img {
     background-color: #F4F4F4;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
+    line-height: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 56px;
 }
 
-.projects h3 {
+.projects p {
+    margin-bottom: 0;
+}
+
+.projects h2 {
+    margin-bottom: 25px;
+}
+
+.headline {
     font-weight: bold;
     color: #FA382F;
 }
 
-.tags {
+.highlight-project {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.highlight-project img {
+    width: 100%;
+}
+
+
+.tag-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tag {
     font-size: 9px;
     background-color: #FDDFE7;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 .arrows {
     font-weight: bold;
     color: #FA382F;
+    font-size: 17px;
+}
+
+.other-projects {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+}
+
+/*THOUGHTS-SECTION*/
+
+.thoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 56px;
+}
+
+.thoughts a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    line-height: 32px;
+    margin-top: 48px;
+}
+
+.thoughts h2 {
+    margin-bottom: 37px;
+}
+
+.thoughts h3 {
+    font-size: 21px;
+    margin: 0;
+}
+
+.thoughts h4 {
+    font-weight: 300;
+    color: #FA382F;
+    margin: 0;
+}
+
+.thoughts p {
+    margin: 0;
+}
+
+.highlight-thought {
+    width: 80%;
+}
+
+.highlight-thought img {
+    width: 100%;
+}
+
+.more-thoughts {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+    font-family: "Roboto", sans-serif;
+}
+
+.more-thoughts h5 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+    margin: 0 0 20px 0;
+}
+
+.thought-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.thought-time {
+    font-weight: 300;
+    color: #FA382F;
+    margin: 0;
+}
+
+/*SKILLS-SECTION*/
+
+.skills {
+    background-color: #F4F4F4;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
 }
 
