@@ -4,6 +4,7 @@ Media queries for desktop starting on line 615.*/
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -247,7 +248,6 @@ header img {
     text-decoration: none;
     font-size: 17px;
     color: #000000;
-    line-height: 32px;
     margin-top: 48px;
 }
 
@@ -273,6 +273,7 @@ header img {
 .featured-thoughts {
     width: 80%;
     margin-top: 22px;
+    line-height: 32px;
 }
 
 .thought-A {
@@ -348,7 +349,7 @@ header img {
 .skill-container {
     display: flex;
     text-align: center;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -357,7 +358,6 @@ header img {
 
 .skill-block {
     margin-bottom: 20px;
-    width: 200px;
 }
 
 /*THE SOCIAL MEDIA SECTION*/
@@ -696,6 +696,10 @@ footer p {
     .other-projects {
         width: 60%;
     }
+
+    .teaser {
+        line-height: 41px;
+    }
     
     .tag {
         font-size: 16px;
@@ -716,6 +720,7 @@ footer p {
 
     .featured-thoughts {
         width: 60%;
+        line-height: 41px;
     }
 
     .more-thoughts {
