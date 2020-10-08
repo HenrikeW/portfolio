@@ -1,5 +1,6 @@
 /*Stylesheet structured after sections, from top to bottom of page. 
-Media queries for tablet starting on line 435. */
+Media queries for tablet starting on line 450. 
+Media queries for desktop starting on line 615.*/
 
 body {
     margin: 0;
@@ -50,13 +51,14 @@ header img {
     border-radius: 50%;
     width: 156px;
     position: absolute;
-    top: 362px;
-    right: 37px;
+    top: 266px;
+    right: 0;
 }
 
 .header-content {
     width: 80%;
     margin-top: 105px;
+    position: relative;
 }
 
 .white-icon-container {
@@ -139,7 +141,6 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 29px;
     padding-top: 58px;
     padding-bottom: 56px;
 }
@@ -147,6 +148,7 @@ header img {
 .tech p {
     width: 80%;
     text-align: center;
+    line-height: 29px;
 }
 
 /*PROJECTS-SECTION*/
@@ -155,7 +157,6 @@ header img {
     background-color: #F4F4F4;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
-    line-height: 29px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,7 +471,7 @@ footer p {
     }
 
     header h2 {
-        font-size: 36px;
+        font-size: 31px;
     }
 
     header h3 {
@@ -499,10 +500,6 @@ footer p {
     /*PROJECTS-SECTION*/
     .projects {
         font-size: 21px;
-    }
-
-    .projects h2 {
-        font-size: 30px;
     }
 
     .featured-projects-container {
@@ -539,13 +536,17 @@ footer p {
         font-size: 12px;
     }
 
-    /*THOUGHTS-SECTION*/
-    .thoughts h2 {
-        font-size: 30px;
+    .arrows {
+        font-size: 21px;
     }
 
-    .thoughts h5 {
+    /*THOUGHTS-SECTION*/
+    .thoughts h5, h4, p {
         font-size: 21px;
+    }
+
+    .thoughts h3 {
+        font-size: 25px;
     }
 
     .featured-thoughts {
@@ -592,6 +593,7 @@ footer p {
     /*SOCIAL MEDIA SECTION*/
     .media-container {
         width: 60%;
+        margin-bottom: 50px;
     }
 
     .social a {
@@ -610,5 +612,160 @@ footer p {
 
     footer p {
         font-size: 23px;
+    }
+
+    footer div {
+        margin: 95px 0;
+    }
+}
+
+/*MEDIA QUERIES FOR DESKTOP SIZE*/
+
+@media (min-width: 1025px) {
+    /*REFERS TO WHOLE PAGE*/
+    .content h1 {
+        font-size: 48px;
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 38px;
+    }
+
+    /*HEADER*/
+    header {
+        height: 655px;
+    }
+    header h1 {
+        font-size: 82px;
+    }
+
+    header h2 {
+        font-size: 42px;
+    }
+
+    header h3 {
+        font-size: 28px;
+    }
+
+    header img {
+        width: 290px;
+        top: 300px;
+        right: -100px;
+    }
+
+    .header-content {
+        width: 60%;
+    }
+
+    .linkedin-white, .github-white, .stack-over-white {
+        width: 74px;
+        height: 74px;
+        margin-right: 10px;
+    }
+
+     /*DESCRIPTION-SECTION*/
+     .description {
+        font-size: 25px;
+    }
+
+    .description article {
+        width: 60%;
+        line-height: 50px;
+    }
+
+     /*TECH-SECTION*/
+     .tech {
+        font-size: 25px;
+    }
+
+    .tech p {
+        width: 60%;
+        line-height: 50px;
+    }
+
+    /*PROJECTS-SECTION*/
+    .projects {
+        font-size: 25px;
+    }
+
+    .featured-projects-container {
+        width: 60%;
+    }
+
+    .other-projects {
+        width: 60%;
+    }
+    
+    .tag {
+        font-size: 16px;
+    }
+
+    /*THOUGHTS-SECTION*/
+    .thoughts {
+        padding-bottom: 123px;
+    }
+
+    .thoughts h5, h4, p {
+        font-size: 25px;
+    }
+
+    .thoughts h3 {
+        font-size: 30px;
+    }
+
+    .featured-thoughts {
+        width: 60%;
+    }
+
+    .more-thoughts {
+        width: 60%;
+    }
+
+    /*SKILL-SECTION*/
+    .skill-container {
+        width: 60%;
+        height: 600px;
+    }
+
+    .skill-container h2 {
+        font-size: 25px;
+    }
+
+    /*SOCIAL MEDIA SECTION*/
+    .media-container {
+        width: 50%;
+    }
+
+    .social a {
+        font-size: 25px;
+    }
+
+    .linkedin, .github, .stack-over {
+        height: 154px;
+        width: 154px;
+    }
+
+    /*FOOTER*/
+    footer h1 {
+        font-size: 38px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    footer div {
+        margin: 135px 0 190px 0;
+    }
+}
+
+/*EXTRA MEDIA-QUERIES FOR VERY WIDE SCREEN*/
+
+@media (min-width: 1300px) {
+    header img {
+        width: 327px;
+        top: 270px;
+        right: 0;
     }
 }
