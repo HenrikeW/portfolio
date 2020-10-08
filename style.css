@@ -1,3 +1,6 @@
+/*Stylesheet structured after sections, from top to bottom of page. 
+Media queries for tablet starting on line 435. */
+
 body {
     margin: 0;
 }
@@ -36,6 +39,12 @@ header h3 {
     margin-bottom: 7px;
 }
 
+.header-name {
+    font-weight: bold; 
+    margin-left: 20px;
+}
+
+
 header img {
     border: 3px solid white;
     border-radius: 50%;
@@ -57,30 +66,17 @@ header img {
 
 .linkedin-white {
     background-image: url(./linkedin_white.svg);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    margin-right: 5px;
 }
 
 .github-white {
     background-image: url(./github_white.svg);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    margin-right: 5px;
 }
 
 .stack-over-white {
     background-image: url(./stackoverflow_white.svg);
+}
+
+.linkedin-white, .github-white, .stack-over-white {
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,6 +146,7 @@ header img {
 
 .tech p {
     width: 80%;
+    text-align: center;
 }
 
 /*PROJECTS-SECTION*/
@@ -179,7 +176,12 @@ header img {
     color: #FA382F;
 }
 
-.highlight-project {
+.featured-projects-container {
+    width: 80%;
+    margin-top: 18px;
+}
+
+.project-A {
     width: 80%;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -187,14 +189,23 @@ header img {
     color: #000000;
 }
 
-.highlight-project img {
+.project-A img {
     width: 100%;
 }
 
+.project-B, .project-E {
+    display: none;
+}
+
+.project-C, .project-D {
+    text-decoration: none;
+    color: #000000;
+}
 
 .tag-container {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 40px;
 }
 
 .tag {
@@ -426,4 +437,66 @@ footer p {
 
 .name {
     font-weight: bold;
+}
+
+/*MEDIA QUERIES FOR TABLET VIEW*/
+
+@media (min-width: 668px) {
+
+    /*HEADER*/
+    header {
+        height: 580px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 36px;
+    }
+
+    header h3 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 234px;
+    }
+
+    .linkedin-white, .github-white, .stack-over-white {
+        width: 54px;
+        height: 54px;
+    }
+
+    /*PROJECTS-SECTION*/
+    .featured-projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .project-A {
+        width: 45%;
+    }
+    
+    .project-B {
+        width: 45%;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .project-B img {
+        width: 100%;
+    }
+
+    .project-C {
+        display: none;
+    }
+
+    .project-E {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+    }
 }
