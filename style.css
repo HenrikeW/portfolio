@@ -262,19 +262,28 @@ header img {
 .thoughts h4 {
     font-weight: 300;
     color: #FA382F;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 .thoughts p {
     margin: 0;
 }
 
-.highlight-thought {
+.featured-thoughts {
+    width: 80%;
+    margin-top: 22px;
+}
+
+.thought-A {
     width: 80%;
 }
 
-.highlight-thought img {
+.thought-A img {
     width: 100%;
+}
+
+.thought-B {
+    display: none;
 }
 
 .more-thoughts {
@@ -315,8 +324,12 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 30px;
     padding-bottom: 6px;
+}
+
+.skills h1 {
+    margin-bottom: 0;
 }
 
 .skills h2 {
@@ -324,6 +337,7 @@ header img {
     font-weight: bold;
     font-size: 17px;
     color: #FA382F;
+    margin-top: 38px;
 }
 
 .skills p {
@@ -332,13 +346,17 @@ header img {
 
 .skill-container {
     display: flex;
-    justify-content: space-around;
     text-align: center;
     width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 540px;
 }
 
 .skill-block {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
 /*THE SOCIAL MEDIA SECTION*/
@@ -367,6 +385,7 @@ header img {
     margin-top: 11px;
 }
 
+
 .icon-container {
     display: flex;
     flex-direction: column;
@@ -374,37 +393,25 @@ header img {
     width: 30%;
 }
 
-.linkedin {
-    background-image: url(./linkedin_red.svg);
+.linkedin, .github, .stack-over {
     background-size: 33%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 58px;
-    width: 58px;
+    height: 52px;
+    width: 52px;
     border: 3px solid #FF0000;
     border-radius: 50%;
+}
+.linkedin {
+    background-image: url(./linkedin_red.svg);
 }
 
 .github {
     background-image: url(./github_red.svg);
-    background-size: 33%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 58px;
-    width: 58px;
-    border: 3px solid #FF0000;
-    border-radius: 50%;
 }
 
 .stack-over {
     background-image: url(./stackoverflow_red.svg);
-    background-size: 33%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 58px;
-    width: 58px;
-    border: 3px solid #FF0000;
-    border-radius: 50%;
 }
 
 /*FOOTER*/
@@ -433,6 +440,7 @@ footer h1 {
 footer p {
     font-family: "Roboto", sans-serif;
     margin: 6px;
+    font-size: 16px;
 }
 
 .name {
@@ -442,6 +450,15 @@ footer p {
 /*MEDIA QUERIES FOR TABLET VIEW*/
 
 @media (min-width: 668px) {
+
+    /*REFERS TO WHOLE PAGE*/
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 29px;
+    }
 
     /*HEADER*/
     header {
@@ -469,7 +486,25 @@ footer p {
         height: 54px;
     }
 
+    /*DESCRIPTION-SECTION*/
+    .description {
+        font-size: 21px;
+    }
+
+    /*TECH-SECTION*/
+    .tech {
+        font-size: 21px;
+    }
+
     /*PROJECTS-SECTION*/
+    .projects {
+        font-size: 21px;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+    }
+
     .featured-projects-container {
         display: flex;
         flex-wrap: wrap;
@@ -498,5 +533,82 @@ footer p {
         display: block;
         text-decoration: none;
         color: #000000;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    /*THOUGHTS-SECTION*/
+    .thoughts h2 {
+        font-size: 30px;
+    }
+
+    .thoughts h5 {
+        font-size: 21px;
+    }
+
+    .featured-thoughts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+
+    .thought-A {
+        width: 45%;
+    }
+
+    .thought-B {
+        display: block;
+        width: 45%;
+    }
+
+    .thought-B img {
+        width: 100%;
+    }
+
+    .thought-C {
+        display: none;
+    }
+
+    /*SKILLS-SECTION*/
+    .skill-container {
+        height: 450px;
+    }
+
+    .skills {
+        font-size: 21px;
+    }
+
+    .skills h2 {
+        font-size: 21px;
+    }
+
+    .skill-block {
+        width: 180px;
+    }
+
+    /*SOCIAL MEDIA SECTION*/
+    .media-container {
+        width: 60%;
+    }
+
+    .social a {
+        font-size: 18px;
+    }
+
+    .linkedin, .github, .stack-over {
+        height: 90px;
+        width: 90px;
+    }
+
+    /*FOOTER*/
+    footer h1 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 23px;
     }
 }
