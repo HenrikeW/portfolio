@@ -20,25 +20,25 @@ header {
 }
 
 header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 32px;
+    margin-bottom: 7px;
+}
+
+header h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 40px;
     margin: 5px 0;
 }
 
-header h2 {
+header h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 24px;
     margin: 5px 0;
-}
-
-header h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    margin-top: 32px;
-    margin-bottom: 7px;
 }
 
 .header-name {
@@ -92,7 +92,7 @@ header img {
 
 /*CONTENT*/
 
-.content h1 {
+.content h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -104,11 +104,12 @@ header img {
     padding-left: 10px;
 }
 
-.content h2 {
+.content h4 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 21px;
     color: #FA382F;
+    line-height: 25px;
 }
 
 
@@ -165,12 +166,11 @@ header img {
     padding-bottom: 56px;
 }
 
-.projects p {
+.projects h3 {
+    font-size: 17px;
+    font-weight: 300;
     margin-bottom: 0;
-}
-
-.projects h2 {
-    margin-bottom: 25px;
+    line-height: 29px;
 }
 
 .headline {
@@ -251,19 +251,23 @@ header img {
     margin-top: 48px;
 }
 
-.thoughts h2 {
+.thoughts h5 {
+    
     margin-bottom: 37px;
 }
 
 .thoughts h3 {
-    font-size: 21px;
-    margin: 0;
+    font-weight: 300;
+    font-size: 17px;
+    color: #FA382F;
+    margin: 10px 0 0 0;
 }
 
 .thoughts h4 {
-    font-weight: 300;
-    color: #FA382F;
-    margin: 10px 0 0 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    margin: 0;
+    color: #000000;
 }
 
 .thoughts p {
@@ -298,10 +302,16 @@ header img {
 }
 
 .more-thoughts h5 {
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    font-size: 21px;
+    color: #FA382F;
+    line-height: 25px;
+    margin: 0;
+    /* font-weight: bold;
     font-size: 17px;
     line-height: 29px;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 0; */
 }
 
 .thought-list {
@@ -453,11 +463,11 @@ footer p {
 @media (min-width: 668px) {
 
     /*REFERS TO WHOLE PAGE*/
-    .content h1 {
+    .content h2 {
         font-size: 30px;
     }
 
-    .content h2 {
+    .content h4 {
         font-size: 29px;
     }
 
@@ -467,15 +477,15 @@ footer p {
     }
 
     header h1 {
-        font-size: 60px;
+        font-size: 20px;
     }
 
     header h2 {
-        font-size: 31px;
+        font-size: 60px;
     }
 
     header h3 {
-        font-size: 20px;
+        font-size: 31px;
     }
 
     header img {
@@ -499,6 +509,10 @@ footer p {
 
     /*PROJECTS-SECTION*/
     .projects {
+        font-size: 21px;
+    }
+
+    .projects h3 {
         font-size: 21px;
     }
 
@@ -541,12 +555,19 @@ footer p {
     }
 
     /*THOUGHTS-SECTION*/
-    .thoughts h5, h4, p {
+    .thoughts h3, .thoughts p {
         font-size: 21px;
     }
 
-    .thoughts h3 {
+    .thoughts h4 {
         font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 5px;
+    }
+
+    .thoughts h5 {
+        font-size: 29px;
+        margin: 10px;
     }
 
     .featured-thoughts {
@@ -623,12 +644,12 @@ footer p {
 
 @media (min-width: 1025px) {
     /*REFERS TO WHOLE PAGE*/
-    .content h1 {
+    .content h2 {
         font-size: 48px;
         padding: 10px;
     }
 
-    .content h2 {
+    .content h4 {
         font-size: 38px;
     }
 
@@ -637,15 +658,15 @@ footer p {
         height: 655px;
     }
     header h1 {
-        font-size: 82px;
+        font-size: 28px;
     }
 
     header h2 {
-        font-size: 42px;
+        font-size: 82px;
     }
 
     header h3 {
-        font-size: 28px;
+        font-size: 42px;
     }
 
     header img {
@@ -689,16 +710,17 @@ footer p {
         font-size: 25px;
     }
 
+    .projects h3 {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
     .featured-projects-container {
         width: 60%;
     }
 
     .other-projects {
         width: 60%;
-    }
-
-    .teaser {
-        line-height: 41px;
     }
     
     .tag {
@@ -710,12 +732,19 @@ footer p {
         padding-bottom: 123px;
     }
 
-    .thoughts h5, h4, p {
+    .thoughts h3, .thoughts p {
         font-size: 25px;
     }
 
-    .thoughts h3 {
+    .thoughts h4 {
         font-size: 30px;
+        line-height: 41px;
+    }
+
+    .thoughts h5 {
+        font-size: 38px;
+        line-height: 47px;
+        margin: 20px;
     }
 
     .featured-thoughts {
