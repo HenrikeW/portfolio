@@ -445,17 +445,18 @@ footer div {
     margin: 60px 0 60px 0;
 }
 
-footer h1 {
+footer h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 21px;
     margin: 17px 0 17px 0;
 }
 
-footer p {
+footer p, footer a {
     font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
     margin: 6px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .name {
@@ -602,6 +603,7 @@ footer p {
 
     /*SKILLS-SECTION*/
     .skill-container {
+        width: 80%;
         height: 450px;
         font-size: 21px;
     }
@@ -631,11 +633,11 @@ footer p {
     }
 
     /*FOOTER*/
-    footer h1 {
+    footer h2 {
         font-size: 30px;
     }
 
-    footer p {
+    footer p, footer a {
         font-size: 23px;
     }
 
@@ -768,6 +770,7 @@ footer p {
 
     /*SKILL-SECTION*/
     .skill-container {
+        width: 60%;
         height: 600px;
         font-size: 25px;
         line-height: 41px;
@@ -792,11 +795,12 @@ footer p {
     }
 
     /*FOOTER*/
-    footer h1 {
+    footer h2 {
         font-size: 38px;
+        margin: 40px 0;
     }
 
-    footer p {
+    footer p, footer a {
         font-size: 30px;
     }
 

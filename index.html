@@ -11,13 +11,13 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="white-icon-container">
-                <div class="linkedin-white">
-                </div>
-                <div class="github-white">
-                </div>
-                <div class="stack-over-white">
-                </div>
+            <div tabindex="0" role="list" class="white-icon-container">
+                <a role="listitem" aria-label="link to Henrikes Linkedin-page" href="#" class="linkedin-white">
+                </a>
+                <a role="listitem" aria-label="link to Henrikes Github-page" href="#" class="github-white">
+                </a>
+                <a role="listitem" aria-label="link to Henrikes page on StackOverflow" href="#" class="stack-over-white">
+                </a>
             </div>
             <div>
                 <article>
@@ -26,14 +26,14 @@
                     <h3>+ science journalist</h3>
                 </article>
             </div>
-            <img src="./profile_front.JPG" alt="profile image">
+            <img src="./profile_front.JPG" alt="profile image of Henrike">
         </div>
     </header>
 
     <section class="content">
         <section class="description">
             <article>
-                <p><span><img src="./lollipop.svg" alt="lollipop-icon"></span>Sonorus tarantallegra banishing aparecium charm- immobilus rictusempra scourgify arania. 
+                <p><span><img src="./lollipop.svg" alt="a decorative lollipop-icon"></span>Sonorus tarantallegra banishing aparecium charm- immobilus rictusempra scourgify arania. 
                     Stupefy wingardium quietus cushioning engorgio. 
                     Mobilicorpus arania rictusempra quietus stupefy rictusempra.</p>
             </article>
@@ -204,7 +204,7 @@
                         <p>JavaScript ES6</p>
                         <p>GitHub</p>
                         <p>Node.js</p>
-                        <h3>UPCOMING</h3>
+                        <h3 aria-label="upcoming code skills">UPCOMING</h3>
                         <p>React</p>
                         <p>Redux</p>
                     </div>
@@ -230,22 +230,22 @@
         </section>
 
         <section class="social">
-            <h2>FOR MORE</h2>
-            <div class="media-container">
-                <div class="icon-container">
+            <h2 aria-label="for more information">FOR MORE</h2>
+            <div tabindex="0" role="list" class="media-container">
+                <div role="listitem" class="icon-container">
                     <div class="linkedin">
                     </div>
-                    <a href="#">LINKEDIN</a>
+                    <a aria-label="link to Henrikes Linkedin-page" href="#">LINKEDIN</a>
                 </div>
-                <div class="icon-container">
+                <div role="listitem" class="icon-container">
                    <div class="github">
                    </div>
-                    <a href="#">GITHUB</a>
+                    <a aria-label="link to Henrikes Github-page" href="#">GITHUB</a>
                 </div>
-                <div class="icon-container">
+                <div role="listitem" class="icon-container">
                     <div class="stack-over">
                     </div>
-                    <a href="#">STACKOVERFLOW</a>
+                    <a aria-label="link to Henrikes page on Stackoverflow" href="#">STACKOVERFLOW</a>
                 </div>
             </div>
         </section>
@@ -253,10 +253,10 @@
 
     <footer>
         <div>
-            <h1>CONTACT</h1>
+            <h2>CONTACT</h2>
             <p class="name">Henrike Wiemker</p>
-            <p>+46 70 2692927</p>
-            <p>henrike.wiemker@posteo.de</p>
+            <a aria-label="telephone number +46702692927" href="tel:+46702692927">+46 70 2692927</a>
+            <a href="mailto:henrike.wiemker@posteo.de">henrike.wiemker@posteo.de</a>
         </div>
     </footer>
     
