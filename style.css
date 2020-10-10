@@ -96,6 +96,7 @@ header img {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 22px;
+    line-height: 27px;
     color: white;
     background-color: #FA382F;
     padding-top: 3px;
@@ -245,6 +246,7 @@ header img {
 
 .thoughts a {
     font-family: "Roboto", sans-serif;
+    line-height: 27px;
     text-decoration: none;
     font-size: 17px;
     color: #000000;
@@ -267,6 +269,7 @@ header img {
     font-family: "Roboto", sans-serif;
     font-size: 21px;
     margin: 0;
+    margin-bottom: 5px;
     color: #000000;
 }
 
@@ -308,10 +311,11 @@ header img {
     color: #FA382F;
     line-height: 25px;
     margin: 0;
-    /* font-weight: bold;
-    font-size: 17px;
+}
+
+.more-thoughts a {
+    font-weight: bold;
     line-height: 29px;
-    margin: 0 0 20px 0; */
 }
 
 .thought-list {
@@ -344,7 +348,7 @@ header img {
     margin-bottom: 0;
 }
 
-.skills h2 {
+.skills h3 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 17px;
@@ -376,7 +380,7 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 40px;
     padding-bottom: 56px;
 }
 
@@ -465,6 +469,7 @@ footer p {
     /*REFERS TO WHOLE PAGE*/
     .content h2 {
         font-size: 30px;
+        line-height: 40px;
     }
 
     .content h4 {
@@ -555,8 +560,9 @@ footer p {
     }
 
     /*THOUGHTS-SECTION*/
-    .thoughts h3, .thoughts p {
+    .thoughts h3, .thoughts p, .thoughts a {
         font-size: 21px;
+        line-height: 32px;
     }
 
     .thoughts h4 {
@@ -597,13 +603,10 @@ footer p {
     /*SKILLS-SECTION*/
     .skill-container {
         height: 450px;
-    }
-
-    .skills {
         font-size: 21px;
     }
 
-    .skills h2 {
+    .skills h3 {
         font-size: 21px;
     }
 
@@ -614,6 +617,7 @@ footer p {
     /*SOCIAL MEDIA SECTION*/
     .media-container {
         width: 60%;
+        margin-top: 25px;
         margin-bottom: 50px;
     }
 
@@ -646,6 +650,7 @@ footer p {
     /*REFERS TO WHOLE PAGE*/
     .content h2 {
         font-size: 48px;
+        line-height: 58px;
         padding: 10px;
     }
 
@@ -734,6 +739,7 @@ footer p {
 
     .thoughts h3, .thoughts p {
         font-size: 25px;
+        line-height: 41px;
     }
 
     .thoughts h4 {
@@ -756,10 +762,15 @@ footer p {
         width: 60%;
     }
 
+    .more-thoughts a {
+        font-size: 25px;
+    }
+
     /*SKILL-SECTION*/
     .skill-container {
-        width: 60%;
         height: 600px;
+        font-size: 25px;
+        line-height: 41px;
     }
 
     .skill-container h2 {
