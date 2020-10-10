@@ -1,6 +1,6 @@
 /*Stylesheet structured after sections, from top to bottom of page. 
-Media queries for tablet starting on line 450. 
-Media queries for desktop starting on line 615.*/
+Media queries for tablet starting on line 468. 
+Media queries for desktop starting on line 650.*/
 
 body {
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 header {
     color: #FFFFFF;
-    background-image:url(./roman-mager1.jpg);
+    background-image:url(./roman-mager.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
