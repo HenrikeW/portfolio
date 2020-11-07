@@ -68,15 +68,15 @@ header img {
 }
 
 .linkedin-white {
-    background-image: url(./linkedin_white.svg);
+    background-image: url(assets/linkedin_white.svg);
 }
 
 .github-white {
-    background-image: url(./github_white.svg);
+    background-image: url(assets/github_white.svg);
 }
 
 .stack-over-white {
-    background-image: url(./stackoverflow_white.svg);
+    background-image: url(assets/stackoverflow_white.svg);
 }
 
 .linkedin-white, .github-white, .stack-over-white {
@@ -418,15 +418,15 @@ header img {
     border-radius: 50%;
 }
 .linkedin {
-    background-image: url(./linkedin_red.svg);
+    background-image: url(assets/linkedin_red.svg);
 }
 
 .github {
-    background-image: url(./github_red.svg);
+    background-image: url(assets/github_red.svg);
 }
 
 .stack-over {
-    background-image: url(./stackoverflow_red.svg);
+    background-image: url(assets/stackoverflow_red.svg);
 }
 
 /*FOOTER*/
@@ -435,6 +435,7 @@ footer {
     background-color: #072BCE;
     color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -442,7 +443,7 @@ footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px 0 60px 0;
+    margin: 60px 0 10px 0;
 }
 
 footer h2 {
@@ -461,6 +462,11 @@ footer p, footer a {
 
 .name {
     font-weight: bold;
+}
+
+.source {
+    text-decoration: none;
+    font-size: 8px;
 }
 
 /*MEDIA QUERIES FOR TABLET VIEW*/
